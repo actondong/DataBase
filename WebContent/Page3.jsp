@@ -165,9 +165,9 @@ $(document).ready(function(){
 			type : "post",
 			data : sendinfo,
 			dataType : "html",
-			success : function() {
-				 alert("Ticket is reserved! Congrats!");
-				//$("#content_rightup").html(data);
+			success : function(data) {
+				// alert("Ticket is reserved! Congrats!");
+				$("#content_left").html(data);
 				//$(this).parent().parent().siblings("#Detail").html(data);	
 			},
 			error : function() {
